@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/*https://www.figma.com/design/MzPh73BQ0rFubCn4WcLdpV/-FREE--Cooking---Recipes-Blog-Template--Community-?node-id=7-360&t=HmWzQEkhXGWUxyft-1*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  padding: 0 64px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  font: inherit;
+}
+
+.h3 {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.button {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 24px;
+  border: 1px solid #262522;
+  line-height: 1;
+}
+
+.recipe {
+  background: #FFFBF2;
+  border-radius: 24px;
+  border: 1px solid rgba(38, 37,34, 16%);  
+  padding-bottom: 15px;
+  font-size: 16px;
+}
+
+.recipe__title,
+.recipe__description,
+.recipe__meta,
+.recipe__ingredient-list {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.recipe__img {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  width: 100%;
+  height: 235px;
+  object-fit: cover;
+  display: block;
+}
+
+.recipe__title {
+  margin-top: 22px;
+}
+
+.recipe__ingredient-list {
+  margin-top: 11px;
+}
+
+.recipe__meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 52px;
+  align-items: center;
+}
+
+.recipe__ingredient {
+  display: inline;
+}
+
+.recipe-params {
+  display: flex;
+  gap: 8px;
+  list-style: "-";
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.recipe-params__item:first-child {
+  list-style: none;
+  padding-left: 0;
+
+}
+
+.recipe-params__item {
+  padding-left: 4px;
+}
+
+
+.recipe-list {
+  /*display: flex;*/
+  /* flex-wrap: wrap; */
+  gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.recipe-list__item {
+  /*width: calc((100% - 32px) / 3);*/
+}
+
+.cover {
+  background: rgba(38, 37,34, 16%),url();
+}
